@@ -5,7 +5,7 @@ public class ArrayTest {
     public static void main(String[] args) {
         ArrayDivision div = new ArrayDivision();
         int[] tab = {1, 2, 3, 4, 5, 6, 7,8,9,10};
-        int n = 6;
+        int n = 4;
         System.out.println("Przed zmianą: " + Arrays.toString(tab));
         try {
 //           tab = null;
