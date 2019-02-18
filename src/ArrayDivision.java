@@ -9,7 +9,10 @@ public class ArrayDivision {
         if (n < 0) {
             throw new NegativeArraySizeException();
         }
-        if (n > tab.length / 2) {
+        if (n%2 == 0 && n > tab.length / 2) {
+            throw new LargeNException();
+        }
+        if (n%2 != 0 && n > (tab.length / 2 + 1)) {
             throw new LargeNException();
         }
         if (tab == null) {
